@@ -5,6 +5,11 @@
 3. Start prometheus `cd prometheus-2.18.0-rc.0.linux-amd64/` `./prometheus`    
 4. Prometheus console can be accessed by `http://localhost:9090`    
 5. By default Prometheus will monitor itself `http://localhost:9090/targets`  
-## Setup - Node Application (Application to be Monitored)
-1. 
+## Node Application (Application to be Monitored)
+1. Has two endpoints    
+    ```
+    "http://localhost:3000/"
+    "http://localhost:3000/metrics" - Endpoint used by Prometheus to get the metrics
+    ```
+2. 
 
