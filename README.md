@@ -44,9 +44,9 @@
 ## Add Node application for monitoring
 1. In `prometheus.yml` add the Node application for monitoring under `scrape_configs`,
     ```
-  - job_name: 'node-app'
-    static_configs:
-    - targets: ['localhost:3000']
+    - job_name: 'node-app'
+      static_configs:
+      - targets: ['localhost:3000']
     ``` 
 2. Now the `node-app` application will be listed in targets `http://localhost:9090/targets` (Status will be shown as `UP` or `DOWN` based on the service status)
 
