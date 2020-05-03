@@ -27,18 +27,18 @@
     ```
 4. Has two endpoints    
     ```
-    "http://localhost:3000/" - Total number of requests to this endpoint will be monitored
-    "http://localhost:3000/metrics" - Endpoint used by Prometheus to get the metrics
+    "http://localhost:3001/" - Total number of requests to this endpoint will be monitored
+    "http://localhost:3001/metrics" - Endpoint used by Prometheus to get the metrics
     
-    $ curl http://localhost:3000/metrics
+    $ curl http://localhost:3001/metrics
     # HELP total_http_request_count Total number of HTTP requests
     # TYPE total_http_request_count counter
     total_http_request_count 0
     
-    $ curl http://localhost:3000/
+    $ curl http://localhost:3001/
     HelloWorld!!
     
-    $ curl http://localhost:3000/metrics
+    $ curl http://localhost:3001/metrics
     # HELP total_http_request_count Total number of HTTP requests
     # TYPE total_http_request_count counter
     total_http_request_count 1 
@@ -48,7 +48,7 @@
     ```
     - job_name: 'node-app'
       static_configs:
-      - targets: ['localhost:3000']
+      - targets: ['localhost:3001']
     ``` 
 2. Now the `node-app` application will be listed in targets `http://localhost:9090/targets` (Status will be shown as `UP` or `DOWN` based on the service status)
 ## Alerts
@@ -115,4 +115,17 @@ Alert manager can send the alert notifications to mail, webhook etc. Sample conf
         auth_username: <email>
         auth_identity: <email>
         auth_password: <google_app_password>
+    ```
+### Grafana Integration
+Prometheus can be added as a datasource to Grafana.  
+1. Install Grafana
+    ```
+    wget https://dl.grafana.com/oss/release/grafana-6.7.3-1.x86_64.rpm
+    sudo yum install grafana-6.7.3-1.x86_64.rpm
+   ```
+2. Start Grafana
+    ```
+    sudo systemctl daemon-reload
+    sudo systemctl start grafana-server
+    sudo systemctl status grafana-server
     ```

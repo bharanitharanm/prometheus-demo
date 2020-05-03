@@ -29,5 +29,5 @@ scrape_configs:
     - targets: ['localhost:9090']
   - job_name: 'node-app'
     static_configs:
-    - targets: ['localhost:3000']
+    - targets: ['localhost:3001']
 
