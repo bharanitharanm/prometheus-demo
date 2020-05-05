@@ -1,1 +1,5 @@
 libs/
+alertmanager-0.20.0.linux-amd64/
+prometheus-2.18.0-rc.0.linux-amd64
+*.tar.gz
+*.log
