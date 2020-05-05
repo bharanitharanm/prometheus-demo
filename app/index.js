@@ -9,7 +9,7 @@ const counter = new Prometheus.Counter({
 
 app.get("", (req,res) => {
     counter.inc(); // Inc with 1
-    res.end("HelloWorld!!\n");
+    res.status(200).end("HelloWorld!!\n");
 });
 
 app.get("/metrics",(req, res) => {
