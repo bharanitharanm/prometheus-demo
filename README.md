@@ -1,4 +1,8 @@
 # Prometheus-demo
+## Automated - Setup
+1. Install Docker and start.
+2. Execute `./start.sh`
+
 ## Setup - Prometheus
 1. Download and Extract 
     ```
