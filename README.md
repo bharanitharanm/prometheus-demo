@@ -2,11 +2,10 @@
 ## Quick Start - Setup
 1. Install Docker and start.
 2. Execute `./start.sh`  
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 | 
+| First Header  | Second Header |  
+| ------------- | ------------- |  
+| Content Cell  | Content Cell  |  
+| Content Cell  | Content Cell  |  
 ## Manual - Setup
 ### Setup - Prometheus
 1. Download and Extract 
