@@ -3,9 +3,9 @@
 1. Install Docker and start.
 2. Execute `./start.sh`  
 Prometheus Console    - `http://localhost:9090`  
-Alert Manager Console - `http://localhost:9093`
-Node app              - `http://localhost:3001`
-cAdvisor Console      - `http://localhost:8080`
+Alert Manager Console - `http://localhost:9093`  
+Node app              - `http://localhost:3001`  
+cAdvisor Console      - `http://localhost:8080`  
 ## Manual - Setup
 ### Setup - Prometheus
 1. Download and Extract 
