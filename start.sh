@@ -24,3 +24,6 @@ cd alertmanager-0.20.0.linux-amd64/
 ./alertmanager > alertmanager.log 2>&1 &
 echo "Alert Manager started"
 
+# Starting cAdvisor
+docker run   --volume=/:/rootfs:ro   --volume=/var/run:/var/run:ro   --volume=/sys:/sys:ro   --volume=/var/lib/docker/:/var/lib/docker:ro   --volume=/dev/disk/:/dev/disk:ro   --publish=8080:8080   --detach=true   --name=cadvisor   gcr.io/google-containers/cadvisor:v0.35.0
+echo "cAdvisor Started"
