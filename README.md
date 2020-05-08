@@ -2,8 +2,8 @@
 ## Quick Start - Setup
 1. Install Docker and start.
 2. Execute `./start.sh`  
-|Component|URL|
-|---|---|
+|Component|URL|  
+|---|---|  
 |Prometheus - Console|http://localhost:9090|  
 |Alert Manager - Console|http://localhost:9093|  
 |Node App|http://localhost:3001|  
