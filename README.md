@@ -2,12 +2,11 @@
 ## Quick Start - Setup
 1. Install Docker and start.
 2. Execute `./start.sh`  
-|Component|URL|  
-|---|---|  
-|Prometheus Console|`http://localhost:9090`|  
-|Alert Manager Console|`http://localhost:9093`|  
-|Node App|`http://localhost:3001`|  
-|cAdvisor|`http://localhost:8080`|  
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 | 
 ## Manual - Setup
 ### Setup - Prometheus
 1. Download and Extract 
