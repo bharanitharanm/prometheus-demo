@@ -1,6 +1,10 @@
 # Prometheus-demo
 ## Quick Start - Setup
-1. Install Docker and start.
+1. Install Docker and start the docker daemon.
+    ```
+    $ git clone https://github.com/bharanitharanm/prometheus-demo.git
+    $ cd prometheus-demo
+    ```
 2. Execute `./start.sh`  
 Prometheus Console    <http://localhost:9090>  
 Alert Manager Console <http://localhost:9093>  
