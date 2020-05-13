@@ -2,7 +2,7 @@
 
 echo "Starting Node application..."
 # Start Node Application
-docker run -p 3001:3001 -d mbharanitharan/prometheus-poc
+docker run -p 3001:3001 -d --name nodeapp mbharanitharan/prometheus-poc
 echo "Node Application started"
 
 # Setup and Start Prometheus
